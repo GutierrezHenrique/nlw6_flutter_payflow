@@ -5,7 +5,8 @@ import 'package:payflow/shared/widgets/boleto_title/boleto_title_widget.dart';
 import 'boleto_list_controller.dart';
 
 class BoletoListWidget extends StatefulWidget {
-  const BoletoListWidget({Key? key}) : super(key: key);
+  final BoletoListController controller;
+  const BoletoListWidget({Key? key, required this.controller}) : super(key: key);
 
   @override
   _BoletoListWidgetState createState() => _BoletoListWidgetState();

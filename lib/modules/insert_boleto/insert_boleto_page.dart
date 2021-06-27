@@ -79,7 +79,8 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
                         validator: controller.validateCodigo,
                         label: "Código",
                         icon: FontAwesomeIcons.barcode,
-                        onChange: (value) {controller.onChange(barcode: value);}),
+                        onChange: (value) {controller.onChange(barcode: value);
+                        }),
                   ],
                 ))
               ],
@@ -87,15 +88,17 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
           ),
         ),
         bottomNavigationBar: SetLabelButtons(
-            enabledSecondaryColor: true,
+            enableSecondaryColor: true,
             primaryLabel: "Cancelar",
             primaryOnPressed: () {
               Navigator.pop(context);
+               print("aqui2");
             },
             secondaryLabel: "Cadastrar",
             secondaryOnPress: () async{
               await controller.cadastrarBoleto();
                Navigator.pop(context);
+               print("aqui2");
             }));
   }
 }

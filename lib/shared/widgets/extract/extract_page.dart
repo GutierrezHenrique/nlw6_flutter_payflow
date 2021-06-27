@@ -7,14 +7,14 @@ import 'package:payflow/shared/widgets/boleto_info/boleto_info_widget.dart';
 import 'package:payflow/shared/widgets/boleto_list/boleto_list_controller.dart';
 import 'package:payflow/shared/widgets/boleto_list/boleto_list_widget.dart';
 
-class MeusBoletosPage extends StatefulWidget {
-  const MeusBoletosPage({Key? key}) : super(key: key);
+class ExtractPage extends StatefulWidget {
+  const ExtractPage({Key? key}) : super(key: key);
 
   @override
-  _MeusBoletosPageState createState() => _MeusBoletosPageState();
+  _ExtractPageState createState() => _ExtractPageState();
 }
 
-class _MeusBoletosPageState extends State<MeusBoletosPage> {
+class _ExtractPageState extends State<ExtractPage> {
   final controller = BoletoListController();
 
   @override
@@ -47,7 +47,7 @@ class _MeusBoletosPageState extends State<MeusBoletosPage> {
             child: Row(
               children: [
                 Text(
-                  "Meus boletos",
+                  "Meus extrato",
                   style: TextStyles.titleBoldHeading,
                 ),
               ],
