@@ -59,7 +59,3 @@
    >Esse projeto foi desenvolvido com ❤️ na #NextLevelWeekTogether da **[Rocketseat  💜🚀](https://rocketseat.com.br/)**.<br> 
 
 ---
-
-   <p align="center">
-      <img alt="NLW" title="PayFlow" src=".github/nlw.png" />
-   </p>
